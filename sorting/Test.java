@@ -9,7 +9,7 @@ public class Test {
         for(int i=num;num>0;num=num/10){
            rem= num%10;
            rev=rev*10+rem;
-
+            System.out.println(rev);
         }
 
         for(int i=rev;rev>0;rev=rev/10){
