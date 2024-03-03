@@ -11,7 +11,7 @@ public class SBIBankLogInProcess implements BankLogInService{
     }
 
     public SBIBankLogInProcess(BankOTPValidService sbiBankLogInProcess) {
-        this.sbiBankLogInProcess = new SBIBankLogInService;
+     //   this.sbiBankLogInProcess = new SBIBankLogInService;
     }
 
     @Override
@@ -19,9 +19,11 @@ public class SBIBankLogInProcess implements BankLogInService{
         if(sbiBankLogInProcess.login(userName, passWord)){
             String otp=sbiBankLogInProcess.generateOTP(userName);
             boolean validOtp=false;
-            try {
-                validOtp=sbiBankLogInProcess.validOTP(UUID.randomUUID().toString());
-            }catch ();
+     /*     try {
+                   validOtp=sbiBankLogInProcess.validOTP(UUID.randomUUID().toString());
+            }catch{
+
+            }*/
         }
         return false;
     }
