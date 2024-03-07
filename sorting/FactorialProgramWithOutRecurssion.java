@@ -1,6 +1,10 @@
 package sorting;
 
 public class FactorialProgramWithOutRecurssion {
+    static void subRoutine(){
+        int d=0;
+        int a=10/d;
+    }
 
         public static void main(String args[]){
             int i,fact=1;
@@ -9,6 +13,8 @@ public class FactorialProgramWithOutRecurssion {
                 fact=fact*i;
             }
             System.out.println("Factorial of "+number+" is: "+fact);
+          //  FactorialProgramWithOutRecurssion.subRoutine();
         }
 
 }
+
